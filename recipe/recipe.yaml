@@ -1,5 +1,5 @@
 context:
-  version: "0.2.4"
+  version: "0.2.5"
 
 package:
   name: eth-pydantic-types
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/e/eth_pydantic_types/eth_pydantic_types-${{ version }}.tar.gz
-  sha256: ee1cfbf3e85f0e3bac8a8711858a019c0abcd786117ea02013d083ea855d9dd8
+  sha256: 87ca85d986155accccb105a6eccd1efee250582452fe00c45336d1ccd679ee61
 
 build:
   noarch: python
@@ -32,7 +32,7 @@ requirements:
 tests:
   - python:
       imports:
-      - eth_pydantic_types
+        - eth_pydantic_types
       pip_check: true
 
   - script:
